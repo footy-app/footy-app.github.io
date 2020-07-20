@@ -7,10 +7,10 @@ const vapidKeys = {
 
 
 var pushSubscription = {
-   "endpoint": "https://fcm.googleapis.com/fcm/send/fx0qrpVE_pk:APA91bGShfi-ZaO101My9RDvHo8ZfKT4T2Z6n2nrwt1V5Uzm276ZD74_tk3rsLjcx8-TAnDhGXIgFb-3H5XOvE9_pY-zHlPykWrI52VS21_GhU8dCd6zV2nhq-9amTQ4suirtvZU0Zlx",
+   "endpoint": "https://fcm.googleapis.com/fcm/send/e9cH_mMSN58:APA91bGdBADHPXfotmyCMjszccnTjPyFBNsgXNZA1JuIKrGR1sZ3gzcQBAF4VChDwHCq_aDuEzJ575n1JvDuZQWbbJOikTbtMzvFAo2QGtNBZ9yXXY6B7OIH_xKdsWAPoqQJuisV8Ag_",
    "keys": {
-      "p256dh": "BAl51CMC45coP+jWMHgf6OWCpoEpGkAGnrx0wkWsWRgmzsgtA++j4sOLkCHQdRC/Dh9BEA0NBcGyCDHJI7cmqCI=",
-      "auth": "wyzlWFxxFOd43DrqRpUHcQ=="
+      "p256dh": "BMrsQBvhc+z8pZ+PSpQsFYQHOw5H3JVLMLdEEg3ei1pCVZfyQTMoJM6kcpoiu5t/5h0ilBVI4oE0+O0/IlWpoSQ=",
+      "auth": "vsj5+gSHvO1lzCQIePkSbg=="
    }
 };
 var payload = 'Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!';

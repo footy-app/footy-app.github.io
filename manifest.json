@@ -3,10 +3,9 @@
   "short_name": "Footy App",
   "theme_color": "#f3f2f8",
   "background_color": "#f3f2f8",
-  "display": "fullscreen",
+  "display": "standalone",
   "gcm_sender_id": "274441504207",
-  "Scope": "/",
-  "start_url": "/index.html#leagues",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
