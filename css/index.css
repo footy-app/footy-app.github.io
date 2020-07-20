@@ -1,0 +1,472 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-display: swap;
+}
+
+body {
+  background-color: #f3f2f8;
+  font-family: Montserrat;
+}
+
+.bottom-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100vw;
+  color: black;
+  height: 8vh;
+  z-index: 100 !important;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+}
+
+@media only screen and (min-width: 760px) {
+  .bottom-navbar {
+    width: 10vw;
+    height: 100vh;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar-section {
+  width: calc(100% / 3);
+  text-align: center;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-section img {
+  width: 20%;
+  pointer-events: none;
+}
+
+.navbar-section p {
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 760px) {
+  .navbar-section {
+    width: 100%;
+    height: calc(100%/3);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 10vh;
+}
+
+.active-nav {
+  background-color: black;
+}
+
+.active-nav img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.active-nav p {
+  color: white;
+}
+
+.ronaldo-poster {
+  height: 50vh;
+}
+
+.league-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+
+@media only screen and (min-width: 760px) {
+  .league-container {
+    width: 90vw;
+  }
+}
+
+.league-container .league-card:nth-child(4),
+.league-container .league-card:nth-child(12) {
+  display: none;
+}
+
+.league-card {
+  margin: 5%;
+  width: 40%;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.league-card img {
+  width: 30%;
+}
+
+.league-card img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 760px) {
+  .league-card {
+    margin: 5vh 10vh;
+  }
+  .league-card img {
+    width: 20%;
+  }
+}
+
+.league-card__logo {
+  margin: 5%;
+  width: 40%;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 16vh;
+}
+
+.league-card__logo img {
+  width: 30%;
+}
+
+.league-card:nth-child(8) img {
+  width: 40%;
+}
+
+@media only screen and (min-width: 760px) {
+  .league-card:nth-child(8) img {
+    width: 10%;
+  }
+}
+
+.league-logo {
+  width: 30vw;
+  margin: 5vh auto;
+}
+
+.standing img,
+.standing object {
+  width: 5vh;
+}
+
+.standing td {
+  width: 10vh;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.padding-left {
+  padding-left: 2vh;
+}
+
+@media only screen and (min-width: 760px) {
+  .padding-left {
+    padding-left: 15vw;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.team-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3vh;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+}
+
+@media only screen and (min-width: 760px) {
+  .team-info {
+    padding-left: 15vw;
+  }
+}
+
+.team-info__logo {
+  width: 20%;
+}
+
+.team-info__logo img {
+  width: 100%;
+}
+
+.team-info__detail {
+  width: 50%;
+  margin: 0 5vw;
+}
+
+@media only screen and (min-width: 760px) {
+  .team-info__detail p {
+    font-size: 3.5vh;
+  }
+}
+
+.team-info__addto {
+  width: 20%;
+}
+
+@media only screen and (min-width: 760px) {
+  .team-info__addto img {
+    width: 80%;
+  }
+}
+
+.player-table {
+  background-color: white;
+}
+
+.player-table:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+.selection {
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (min-width: 760px) {
+  .selection {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  #player-content {
+    width: 70vw;
+    position: relative;
+    left: 20%;
+  }
+}
+
+.active-select {
+  border-bottom: 2px solid black;
+}
+
+.hide-content {
+  display: none;
+}
+
+.myteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myteam__team {
+  width: 30%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.myteam__team p {
+  height: 30%;
+  text-align: center;
+}
+
+.myteam__team img {
+  width: 100%;
+}
+
+.myteam__team__delete {
+  width: 100%;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  margin: 3%;
+  padding: 5%;
+  background-color: red;
+}
+
+.myteam__team__detail {
+  width: 100%;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  margin: 3%;
+  padding: 5%;
+  background-color: blue;
+}
+
+.neymar-img {
+  width: 120vw;
+  position: relative;
+  left: -10vw;
+}
+
+.match-box {
+  width: 85vw;
+  margin: 2vh auto;
+  padding: 2vh;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 3px gray;
+          box-shadow: 0 4px 3px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 760px) {
+  .match-box {
+    width: 50vw;
+  }
+}
+
+.match-box__competition {
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+.match-box__competition span:nth-child(2) {
+  color: gray;
+  float: right;
+  font-weight: normal;
+}
+
+.match-box__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.match-box__score__time {
+  width: 15%;
+  text-align: center;
+}
+
+.match-box__score__team {
+  width: 70%;
+}
+
+.match-box__score__number {
+  width: 15%;
+}
+
+select {
+  display: block;
+}
+
+.match-messi {
+  width: 100%;
+}
+
+.date-filter__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.date-filter__field span {
+  margin: 0 10vw;
+  width: 20%;
+}
+
+.date-filter__field input[type="date"] {
+  margin-right: 10%;
+  width: 70%;
+}
+
+.date-filter__go {
+  margin: 2vh 0;
+  position: relative;
+  left: 50vw;
+  padding: 2vh 5vh;
+  background-color: black;
+  color: white;
+  border-radius: 15vh;
+  display: inline-block;
+}
+
+.league-select {
+  margin: 5vh 0;
+}
+
+.save-it {
+  position: fixed;
+  top: 0;
+}
+/*# sourceMappingURL=index.css.map */

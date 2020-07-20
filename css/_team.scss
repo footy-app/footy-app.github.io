@@ -1,0 +1,114 @@
+.team-info {
+  display: flex;
+  padding: 3vh;
+  background-color: white;
+  box-shadow: 0 2px 5px gray;
+  @include desktop() {
+    padding-left: 15vw;
+  }
+  &__logo {
+    width: 20%;
+    img {
+      width: 100%;
+    }
+  }
+  &__detail {
+    width: 50%;
+    margin: 0 5vw;
+    @include desktop(){
+    p{
+      font-size: 3.5vh;
+    }
+    }
+  }
+
+  &__addto {
+    width: 20%;
+    @include desktop(){
+    img{
+      width: 80%;
+    }
+    }
+  }
+}
+
+.player-table {
+  background-color: white;
+  
+  &:nth-child(odd) {
+    background-color: rgb(252, 252, 252);
+  }
+}
+
+.selection {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-around;
+
+  @include desktop(){
+   justify-content: space-evenly; 
+  }
+}
+
+#player-content{
+  @include desktop(){
+   width: 70vw; 
+   position: relative;
+   left:20%;
+  }
+}
+
+.active-select {
+  border-bottom: 2px solid black;
+}
+
+.hide-content {
+  display: none;
+}
+
+//MY TEAM BELOW THIS
+
+.myteam {
+  display: flex;
+
+  &__team {
+    width: 30%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      height: 30%;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @mixin myteam-button {
+      width: 100%;
+      border-radius: 30px;
+      color: white;
+      text-align: center;
+      margin: 3%;
+      padding: 5%;
+    }
+
+    &__delete {
+      @include myteam-button();
+      background-color: red;
+    }
+
+    &__detail {
+      @include myteam-button();
+      background-color: blue;
+    }
+  }
+}
+
+.neymar-img {
+  width: 120vw;
+  position: relative;
+  left: -10vw;
+}
