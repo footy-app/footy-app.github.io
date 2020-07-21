@@ -98,6 +98,10 @@ body {
   color: white;
 }
 
+.centerer {
+  margin: auto !important;
+}
+
 .ronaldo-poster {
   height: 50vh;
 }

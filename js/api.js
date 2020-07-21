@@ -82,7 +82,7 @@ function getLeague() {
 
         leagueHTML += `
                   <div class="card league-cardss valign-wrapper">
-                  <div class="card-image">
+                  <div class="card-image centerer">
                     <a href="./league.html?id=${league.id}">
                        <img src="../images/logos/logo-${league.id}.png" alt="/" />
                     </a>  
