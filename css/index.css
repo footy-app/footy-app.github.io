@@ -160,6 +160,12 @@ body {
   }
 }
 
+.league-cardss {
+  width: 40%;
+  margin: 4.5%;
+  border-radius: 15px;
+}
+
 .league-card__logo {
   margin: 5%;
   width: 40%;
@@ -183,12 +189,13 @@ body {
   width: 30%;
 }
 
-.league-card:nth-child(8) img {
-  width: 40%;
+.league-cardss:nth-child(8) img {
+  width: 70%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 760px) {
-  .league-card:nth-child(8) img {
+  .league-cardss:nth-child(8) img {
     width: 10%;
   }
 }

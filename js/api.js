@@ -81,13 +81,16 @@ function getLeague() {
       data.competitions.forEach(function (league) {
 
         leagueHTML += `
-                  <div class="league-card">
+                  <div class="card league-cardss valign-wrapper">
+                  <div class="card-image">
                     <a href="./league.html?id=${league.id}">
                        <img src="../images/logos/logo-${league.id}.png" alt="/" />
                     </a>  
+                    </div>
                   </div>
               `;
       });
+    
       document.getElementById("leagues").innerHTML = leagueHTML;
     })
     .catch(error);

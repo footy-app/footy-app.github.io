@@ -46,14 +46,21 @@
   }
 }
 
+.league-cardss{
+  width: 40%;
+  margin:4.5%;
+  border-radius: 15px;
+}
+
 .league-card__logo {
   @include cards;
   height: 16vh;
 }
 
-.league-card:nth-child(8) {
+.league-cardss:nth-child(8) {
   img {
-    width: 40%;
+    width: 70%;
+    margin:auto;
   }
   @include desktop() {
     img {
