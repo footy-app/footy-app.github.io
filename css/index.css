@@ -166,6 +166,10 @@ body {
   border-radius: 15px;
 }
 
+.league-cardss .card-image {
+  margin: auto;
+}
+
 .league-card__logo {
   margin: 5%;
   width: 40%;
