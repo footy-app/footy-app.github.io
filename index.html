@@ -64,22 +64,22 @@
           }
 
           if (('PushManager' in window)) {
-    navigator.serviceWorker.getRegistration().then(function(registration) {
-        registration.pushManager.subscribe({
-            userVisibleOnly: true,
-            applicationServerKey:urlBase64ToUint8Array("BDCwC_iJU-L4wP91uQVeEOTYERAp-fAlzh2nu5co1BsgOFmsWStmnDPiHRGbumeJOhHcl_45yWI0TsyXqYVxUuA")
+            navigator.serviceWorker.getRegistration().then(function (registration) {
+              registration.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: urlBase64ToUint8Array("BDCwC_iJU-L4wP91uQVeEOTYERAp-fAlzh2nu5co1BsgOFmsWStmnDPiHRGbumeJOhHcl_45yWI0TsyXqYVxUuA")
 
-        }).then(function(subscribe) {
-            console.log('Berhasil melakukan subscribe dengan endpoint: ', subscribe.endpoint);
-            console.log('Berhasil melakukan subscribe dengan p256dh key: ', btoa(String.fromCharCode.apply(
-                null, new Uint8Array(subscribe.getKey('p256dh')))));
-            console.log('Berhasil melakukan subscribe dengan auth key: ', btoa(String.fromCharCode.apply(
-                null, new Uint8Array(subscribe.getKey('auth')))));
-        }).catch(function(e) {
-            console.error('Tidak dapat melakukan subscribe ', e.message);
-        });
-    });
-}
+              }).then(function (subscribe) {
+                console.log('Berhasil melakukan subscribe dengan endpoint: ', subscribe.endpoint);
+                console.log('Berhasil melakukan subscribe dengan p256dh key: ', btoa(String.fromCharCode.apply(
+                  null, new Uint8Array(subscribe.getKey('p256dh')))));
+                console.log('Berhasil melakukan subscribe dengan auth key: ', btoa(String.fromCharCode.apply(
+                  null, new Uint8Array(subscribe.getKey('auth')))));
+              }).catch(function (e) {
+                console.error('Tidak dapat melakukan subscribe ', e.message);
+              });
+            });
+          }
         });
       }
     }
@@ -101,7 +101,22 @@
       window.resizeTo(300, 600);
     });
   </script>
-
+  <script>
+    // REGISTER SERVICE WORKER
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function () {
+            console.log('Pendaftaran ServiceWorker berhasil');
+          })
+          .catch(function () {
+            console.log('Pendaftaran ServiceWorker gagal');
+          });
+      })
+    } else {
+      console.log("ServiceWorker belum didukung browser ini.")
+    }    
+  </script> 
 </body>
 
 </html>
