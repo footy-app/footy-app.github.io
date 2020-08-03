@@ -6,60 +6,6 @@ if (workbox)
 else
   console.log(`Workbox gagal dimuat`);
 
-// workbox.core.skipWaiting();
-// var urlsToCache = [
-//   "/",
-//   "/nav.html",
-//   "/index.html",
-//   "/league.html",
-//   "/team.html",
-//   "/pages/leagues.html",
-//   "/pages/match.html",
-//   "/pages/myteam.html",
-//   "/css/materialize.css",
-//   "/css/index.css",
-//   "/css/index.css.map",
-//   "/fonts/Montserrat-Medium.ttf",
-//   "/js/materialize.min.js",
-//   "/js/materialize.js",
-//   "/js/nav.js",
-//   "/js/api.js",
-//   "/js/match.js",
-//   "/js/team.js",
-//   "/js/db.js",
-//   "js/idb-2.1.3/lib/idb.js",
-//   "/images/icons/icon-128x128.png",
-//   "/images/icons/icon-144x144.png",
-//   "/images/icons/icon-152x152.png",
-//   "/images/icons/icon-192x192.png",
-//   "/images/icons/icon-384x384.png",
-//   "/images/icons/icon-512x512.png",
-//   "/images/icons/icon-72x72.png",
-//   "/images/icons/icon-96x96.png",
-//   "/images/logos/logo-2000.png",
-//   "/images/logos/logo-2002.png",
-//   "/images/logos/logo-2003.png",
-//   "/images/logos/logo-2001.png",
-//   "/images/logos/logo-2013.png",
-//   "/images/logos/logo-2014.png",
-//   "/images/logos/logo-2015.png",
-//   "/images/logos/logo-2016.png",
-//   "/images/logos/logo-2017.png",
-//   "/images/logos/logo-2018.png",
-//   "/images/logos/logo-2019.png",
-//   "/images/logos/logo-2021.png",
-//   "/images/Menu 1.png",
-//   "/images/Menu 2.png",
-//   "/images/Menu.png",
-//   "/images/ronaldo.png",
-//   "/images/Add.svg",
-//   "/images/neymar-mini.jpg",
-//   "/images/neymar.jpg",
-//   "/images/barca.png",
-//   "/images/messips.png",
-//   "/manifest.json",
-//   "/package.json",
-// ];
 
 workbox.precaching.precacheAndRoute([
   { url: '/index.html', revision: '1' },
@@ -112,9 +58,11 @@ workbox.precaching.precacheAndRoute([
   "/images/barca.png",
   "/images/messips.png",
   "/manifest.json",
-  // "/package.json",
-
-]);
+],
+  {
+    ignoreUrlParametersMatching: [/.*/]
+  }
+);
 
 workbox.routing.registerRoute(new RegExp("/"),
   workbox.strategies
