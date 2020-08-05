@@ -34,6 +34,7 @@ workbox.precaching.precacheAndRoute([
   "/images/icons/icon-192x192.png",
   "/images/icons/icon-384x384.png",
   "/images/icons/icon-512x512.png",
+  "/images/icons/icon-512x512-512x512.png",
   "/images/icons/icon-72x72.png",
   "/images/icons/icon-96x96.png",
   "/images/logos/logo-2000.png",
